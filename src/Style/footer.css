@@ -1,0 +1,107 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-footer{
+    width: 100%;
+background-color: #b9fd50;
+    height: 180px;
+position: relative;
+align-items: center;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.sub-footer div{
+    width: 80%;
+    height: 180px;
+    top:20%;
+    position: absolute;
+    background: #222222;
+    border-radius: 7px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+.see-pricing-btn{
+    border: none;
+    outline: none;
+    background: #b9fd50;
+    padding: 9px;
+    border-radius: 4px;
+}
+.sub-footer div h1 ,.sub-footer div p , .sub-footer div h6{
+margin: 3px;
+padding: 3px;
+}
+.footer-clickit{
+    display: flex;
+    color: #ffffff;
+    justify-content: space-evenly;
+    align-items: center;
+width: 80%;
+margin: auto;
+margin-top: 50px;
+font-size: 12px;
+
+}
+.footer-clickit div{
+    width: 19%;
+}
+@media screen and (max-width:600px) {
+    .footer-clickit{
+        flex-direction: column;
+    }
+    .footer-clickit div{
+        margin-bottom: 20px;
+        width: 60%;
+    }
+    .footer-clickit div:first-child{
+        margin-top: 20px;
+    }
+    .sub-footer{
+        height: 631px;
+        background-color: #b9fd50;
+    }
+    .sub-footer div{
+        top: 106px;
+        height: 559px;
+        margin-bottom: 20px;
+        width: 85%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 22px;
+    }
+    sub-footer div h1 ,.sub-footer div p , .sub-footer div h6{
+        margin: 8px;
+        margin-bottom: 20px;
+        padding: 6px;
+        }
+        .footer-last-sec{
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+}
+
+.footer-last-sec{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: gray;
+}
+
+.footer-last-sec ul{
+    display: flex;
+    list-style: none;
+}
+.footer-last-sec ul li{
+    margin-right: 20px;
+}
+.line{
+    width: 73%;
+    border: 1px solid #ffffff;
+    margin: auto;
+}

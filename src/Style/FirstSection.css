@@ -1,0 +1,107 @@
+.first-section{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('../image/try.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.bost-carier{
+  color: #ffffff;
+  font-size: 39px;
+  font-weight: 900;
+}
+.Drive-section{
+  color: gray;
+}
+.btn-start{
+    border: none;
+    outline: none;
+    background: #93e317;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.trusted{
+color: #ffffff;
+position: relative;
+}
+.trusted::before {
+  content: "";
+  height: 4px !important;
+  width: 30px;
+  background-color: #93e317;
+  position: absolute;
+  margin: 0 10px;
+  left: -50px;
+  top: 12px;
+  }
+  
+  .trusted::after {
+    content: "";
+    position: absolute;
+    flex-grow: 1;
+    height: 4px;
+    width: 30px;
+    background-color: #93e317;
+    margin: 0 10px;
+    left: 225px;
+    top: 12px;
+  }
+  .last-first{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    background-color: #222222;
+    height: 50px;
+    border-radius: 5px;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .bost-carier{
+      font-size: 32px;
+    }
+    .first-section{
+      width: 95%;
+      margin: auto;
+    }
+    .last-first{
+     display: grid;
+     background-color: transparent;
+    }
+    .last-first{
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 0;
+      padding: 20px;
+      width: 100%;
+      height: auto;
+  }
+  
+  .last-first div {
+    
+    padding: 20px;
+    border-right: 1px solid #2b2b2b;
+    border-bottom: 1px solid #2b2b2b; 
+    text-align: center;
+   
+    box-sizing: border-box; 
+}
+  }
+  @media only screen and (max-width: 900px) {
+    .last-first{
+      width: 80%;
+    }
+
+  }
+  @media only screen and (max-width:1100px) {
+    .last-first{
+      width: 80%;
+    }
+}
